@@ -1,0 +1,26 @@
+num,Query,id,type,direction,dimensions,measure
+0,Report about any significant deviations in our ad spend across different platforms.,11 - MarketingData,anomaly,both,['Platform'],Ad_Spend
+1,I need identification of any unusual drops or spikes in click rates for our email campaigns.,11 - MarketingData,anomaly,both,['Campaign_Type'],Clicks
+2,I want to know about any unexpected changes in conversion rates for our social media campaigns on every platform.,11 - MarketingData,anomaly,both,"['Campaign_Type', 'Platform']",Conversions
+3,Inform me about decrease in spendings in search campaings split by audience.,11 - MarketingData,anomaly,down,"['Campaign_Type', 'Audience_Segment']",Ad_Spend
+4,Raise an alert if click data is missing,11 - MarketingData,no data,both,"['Campaign_Type', 'Region', 'Platform', 'Audience_Segment']",Clicks
+5,Are there any unexpected fluctuations in stock levels for specific product categories drilled by suppliers,12 - InventoryData,anomaly,both,"['Product_Category', 'Supplier']",Items_In_Stock
+6,Notice any unusual patterns in daily consumption rates that could indicate a problem?,12 - InventoryData,anomaly,both,"['Product_Category', 'Warehouse_Location', 'Supplier']",Consumption_Per_Day
+7,Report about the items having an average age of over 100 days in our warehouses.,12 - InventoryData,static,up,"['Product_Category', 'Warehouse_Location']",Average_Item_Age
+8,I want to see locations with significant discrepancies in inventory levels.,12 - InventoryData,anomaly,both,['Warehouse_Location'],Items_In_Stock
+9,I need to know about furniture overstocking in Michigan with supplier indicated,12 - InventoryData,anomaly,up,"['Product_Category', 'Warehouse_Location', 'Supplier']",Items_In_Stock
+10,Monitor any significant drops in production volumes for any of our product lines.,13 - ProductionData,anomaly,down,['Product_Line'],Units_Produced
+11,Identify any increase in defect rates across different factories. Drill down by products,13 - ProductionData,anomaly,up,"['Factory_Location', 'Product_Line']",Defect_Rate
+12,Report if downtime on computer line during any of the shifts is more then 3 hours.,13 - ProductionData,static,up,"['Product_Line', 'Shift']",Downtime
+13,Inform me about dramatic changes in defected mobile units,13 - ProductionData,anomaly,both,['Product_Line'],Defect_Rate
+14,Detect location-specific anomalies in production of every product.,13 - ProductionData,anomaly,both,"['Factory_Location', 'Product_Line']",Units_Produced
+15,Are there any unexpected changes in the number of active users across different plan types?,14 - SaaSUsageData,anomaly,both,['Plan_Type'],Active_Users
+16,Identify any decrease in subscription revenue that might indicate billing issues.,14 - SaaSUsageData,anomaly,down,"['User_Type', 'Plan_Type', 'Region']",Subscription_Revenue
+17,Have we observed any unusual spikes in churn rates for enterprise customers?,14 - SaaSUsageData,anomaly,up,['User_Type'],Churn_Rate
+18,Monitor drops in revenue from European individual and small business users.,14 - SaaSUsageData,anomaly,down,"['User_Type', 'Region']",Subscription_Revenue
+19,Inform me when churn rate raises above 7% for premium users. I want alert for every regions separately.,14 - SaaSUsageData,static,up,"['Plan_Type', 'Region']",Churn_Rate
+20,Detect any unusual patterns in active user counts for different app versions.,15 - AppPerformanceData,anomaly,both,['App_Version'],Active_Users
+21,Identify any anomalies in session lengths across various adnroid device types.,15 - AppPerformanceData,anomaly,both,"['Device_Type', 'Operating_System']",Session_Length
+22,Monitor for significant increases in crash rates for specific operating systems and application version.,15 - AppPerformanceData,anomaly,up,"['Operating_System', 'App_Version']",Crash_Rate
+23,Inform me when number of users for 1.0 windows version drops below 500.,15 - AppPerformanceData,static,down,"['App_Version', 'Operating_System']",Active_Users
+24,Please notify me if the session length data stops being received from the server.,15 - AppPerformanceData,no data,both,"['App_Version', 'Device_Type', 'Operating_System']",Session_Length

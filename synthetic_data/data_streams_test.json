@@ -1,0 +1,174 @@
+{
+
+"11 - MarketingData": {
+    "name": "MarketingData",
+    "measures": [
+        "Ad_Spend",
+        "Clicks",
+        "Conversions"
+    ],
+    "dimensions": [
+        "Campaign_Type",
+        "Region",
+        "Platform",
+        "Audience_Segment"
+    ],
+    "sample": {
+        "Campaign_Type": [
+            "Search",
+            "Display",
+            "Social",
+            "Email"
+        ],
+        "Region": [
+            "North",
+            "South",
+            "East",
+            "West"
+        ],
+        "Platform": [
+            "Google",
+            "Facebook",
+            "LinkedIn",
+            "Twitter"
+        ],
+        "Audience_Segment": [
+            "Young_Adults",
+            "Professionals",
+            "Retirees",
+            "Students"
+        ]
+    }
+},
+
+"12 - InventoryData": {
+    "name": "InventoryData",
+    "measures": [
+        "Items_In_Stock",
+        "Consumption_Per_Day",
+        "Average_Item_Age"
+    ],
+    "dimensions": [
+        "Product_Category",
+        "Warehouse_Location",
+        "Supplier"
+    ],
+    "sample": {
+        "Product_Category": [
+            "Appliances",
+            "Furniture",
+            "Electrical",
+            "Computers"
+        ],
+        "Warehouse_Location": [
+            "Georgia",
+            "Main",
+            "Minnesota",
+            "Michigan"
+        ],
+        "Supplier": [
+            "Supplier_A",
+            "Supplier_B",
+            "Supplier_C"
+        ]
+    }
+},
+
+"13 - ProductionData": {
+    "name": "ProductionData",
+    "measures": [
+        "Units_Produced",
+        "Defect_Rate",
+        "Downtime"
+    ],
+    "dimensions": [
+        "Product_Line",
+        "Factory_Location",
+        "Shift"
+    ],
+    "sample": {
+        "Product_Line": [
+            "Electronics",
+            "Computers",
+            "Mobile"
+        ],
+        "Factory_Location": [
+            "Factory_1",
+            "Factory_2",
+            "Factory_3",
+            "Factory_4"
+        ],
+        "Shift": [
+            "Morning",
+            "Afternoon",
+            "Night"
+        ]
+    }
+},
+
+"14 - SaaSUsageData": {
+    "name": "SaaSUsageData",
+    "measures": [
+        "Active_Users",
+        "Subscription_Revenue",
+        "Churn_Rate"
+    ],
+    "dimensions": [
+        "User_Type",
+        "Plan_Type",
+        "Region"
+    ],
+    "sample": {
+        "User_Type": [
+            "Individual",
+            "Small_Business",
+            "Enterprise"
+        ],
+        "Plan_Type": [
+            "Free",
+            "Basic",
+            "Premium"
+        ],
+        "Region": [
+            "North_America",
+            "Europe",
+            "Asia",
+            "South_America"
+        ]
+    }
+},
+
+"15 - AppPerformanceData": {
+    "name": "AppPerformanceData",
+    "measures": [
+        "Active_Users",
+        "Session_Length",
+        "Crash_Rate"
+    ],
+    "dimensions": [
+        "App_Version",
+        "Device_Type",
+        "Operating_System"
+    ],
+    "sample": {
+        "App_Version": [
+            "1.0",
+            "1.1",
+            "2.0",
+            "2.1"
+        ],
+        "Device_Type": [
+            "Smartphone",
+            "Tablet",
+            "Desktop"
+        ],
+        "Operating_System": [
+            "iOS",
+            "Android",
+            "Windows",
+            "MacOS"
+        ]
+    }
+}
+
+}

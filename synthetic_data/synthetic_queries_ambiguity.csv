@@ -1,0 +1,8 @@
+num,Query,id,type,direction,dimensions,measure
+2,Monitor for unexpected spikes in declined transactions through Visa in the gardening segment.,1 - CalDemo,anomaly,up,"['Segment', 'Payment_Method', 'Status']",Transaction_Request_Count
+6,Alert me when there is a decrease in transactions below 500 for any segment and source.,1 - CalDemo,static,down,"['Segment', 'Source']",Transaction_Request_Count
+8,Monitor a sudden drop in approved transaction counts through Visa in the gardening segment.,1 - CalDemo,anomaly,down,"['Segment', 'Payment_Method', 'Status']",Transaction_Request_Count
+9,"Alert for spikes in declined transactions through MasterCard in the travel segment, potentially indicating security issues.",1 - CalDemo,anomaly,up,"['Segment', 'Payment_Method', 'Status']",Transaction_Request_Count
+26,"Alert for no sales data on electronics during winter, indicating potential supply issues.",3 - grocery,no data,both,"['Product_Category', 'Season']",Daily_Sales_Volume
+39,Monitor if technical support issues see an increase in resolution speed during morning hours.,4 - CustomerService,anomaly,up,"['Service_Type', 'Peak_Hours']",First_Call_Resolution
+68,Monitor for unexpected decreases in traffic from social media to blog pages.,7 - WebsiteTraffic,anomaly,down,"['Page_Type', 'Traffic_Source']",Unique_Visitors

@@ -1,0 +1,712 @@
+
+{
+    "1 - CalDemo": {
+        "name": "CalDemo",
+        "measures": [
+            "Transactions_request_Amount",
+            "Transaction_Request_Count"
+        ],
+        "dimensions": [
+            "Segment",
+            "Source",
+            "Is_tourist",
+            "Status",
+            "Request_type",
+            "Payment_Method",
+            "Slack_mapping"
+        ],
+        "sample": {
+            "Segment": [
+                "Fashion",
+                "Gardening",
+                "Travel",
+                "Tech"
+            ],
+            "Source": [
+                "Bank",
+                "Mastercard",
+                "Shva",
+                "Visa"
+            ],
+            "Is_tourist": [
+                true,
+                false
+            ],
+            "Status": [
+                "Approved",
+                "Declined"
+            ],
+            "Request_type": [
+                "Frontal",
+                "Online",
+                "Cash_withdraw",
+                "Contactless"
+            ],
+            "Payment_Method": [
+                "American",
+                "Visa",
+                "MasterCard",
+                "Diners",
+                "Trustly"
+            ]
+        }
+    },
+    "2 - CustomerSupport": {
+        "name": "CustomerSupport",
+        "measures": [
+            "Customer_Satisfaction_Score",
+            "Response_Rate"
+        ],
+        "dimensions": [
+            "Customer_Segment",
+            "Contact_Channel",
+            "Issue_Resolved",
+            "Agent_ID"
+        ],
+        "sample": {
+            "Customer_Segment": [
+                "VIP",
+                "Regular",
+                "Occasional",
+                "First-time"
+            ],
+            "Contact_Channel": [
+                "Phone",
+                "Email",
+                "Chat",
+                "Social_Media"
+            ],
+            "Issue_Resolved": [
+                true,
+                false
+            ],
+            "Agent_ID": [
+                "A001",
+                "A002",
+                "A003",
+                "A004"
+            ]
+        }
+    },
+    "3 - grocery": {
+        "name": "grocery",
+        "measures": [
+            "Daily_Sales_Volume",
+            "Inventory_Turnover_Rate"
+        ],
+        "dimensions": [
+            "Product_Category",
+            "Store_Location",
+            "Promotion_Applied",
+            "Season"
+        ],
+        "sample": {
+            "Product_Category": [
+                "Electronics",
+                "Clothing",
+                "Home_Goods",
+                "Groceries"
+            ],
+            "Store_Location": [
+                "North",
+                "South",
+                "East",
+                "West"
+            ],
+            "Promotion_Applied": [
+                true,
+                false
+            ],
+            "Season": [
+                "Spring",
+                "Summer",
+                "Autumn",
+                "Winter"
+            ]
+        }
+    },
+    "4 - CustomerService": {
+        "name": "CustomerService",
+        "measures": [
+            "Average_Handling_Time",
+            "First_Call_Resolution"
+        ],
+        "dimensions": [
+            "Service_Type",
+            "Operator_ID",
+            "Peak_Hours",
+            "Customer_Type"
+        ],
+        "sample": {
+            "Service_Type": [
+                "Technical_Support",
+                "Customer_Inquiry",
+                "Billing_Issue",
+                "Account_Update"
+            ],
+            "Operator_ID": [
+                "OP001",
+                "OP002",
+                "OP003",
+                "OP004"
+            ],
+            "Peak_Hours": [
+                "Morning",
+                "Afternoon",
+                "Evening",
+                "Night"
+            ],
+            "Customer_Type": [
+                "Business",
+                "Personal"
+            ]
+        }
+    },
+    "5 - SalesData": {
+        "name": "SalesData",
+        "measures": [
+            "Revenue",
+            "Units_Sold",
+            "Profit"
+        ],
+        "dimensions": [
+            "Product_Type",
+            "Region",
+            "Channel"
+        ],
+        "sample": {
+            "Product_Type": [
+                "Electronics",
+                "Apparel",
+                "Furniture",
+                "Food"
+            ],
+            "Region": [
+                "North",
+                "South",
+                "East",
+                "West"
+            ],
+            "Channel": [
+                "Online",
+                "Retail"
+            ]
+        }
+    },
+    "6 - EmployeePerformance": {
+        "name": "EmployeePerformance",
+        "measures": [
+            "Sales_Target_Achieved",
+            "Customer_Satisfaction_Score",
+            "Absenteeism_Rate"
+        ],
+        "dimensions": [
+            "Department",
+            "Position",
+            "Tenure"
+        ],
+        "sample": {
+            "Department": [
+                "Sales",
+                "Marketing",
+                "HR",
+                "Finance"
+            ],
+            "Position": [
+                "Manager",
+                "Associate",
+                "Supervisor",
+                "Executive"
+            ],
+            "Tenure": [
+                "0-2_Years",
+                "3-5_Years",
+                "6-10_Years",
+                "10+_Years"
+            ]
+        }
+    },
+    "7 - WebsiteTraffic": {
+        "name": "WebsiteTraffic",
+        "measures": [
+            "Page_Views",
+            "Unique_Visitors",
+            "Bounce_Rate"
+        ],
+        "dimensions": [
+            "Page_Type",
+            "Traffic_Source",
+            "Device_Type"
+        ],
+        "sample": {
+            "Page_Type": [
+                "Home",
+                "Product",
+                "Blog",
+                "Contact"
+            ],
+            "Traffic_Source": [
+                "Organic_Search",
+                "Social_Media",
+                "Referral",
+                "Direct"
+            ],
+            "Device_Type": [
+                "Desktop",
+                "Mobile",
+                "Tablet"
+            ]
+        }
+    },
+    "8 - SupplyChain": {
+        "name": "SupplyChain",
+        "measures": [
+            "Inventory_Level",
+            "Order_Fulfillment_Time",
+            "Supplier_Performance"
+        ],
+        "dimensions": [
+            "Product_Category",
+            "Supplier",
+            "Warehouse"
+        ],
+        "sample": {
+            "Product_Category": [
+                "Electronics",
+                "Apparel",
+                "Furniture",
+                "Toys"
+            ],
+            "Supplier": [
+                "Amazon",
+                "Walmart",
+                "Target",
+                "BestBuy"
+            ],
+            "Warehouse": [
+                "Warehouse1",
+                "Warehouse2",
+                "Warehouse3",
+                "Warehouse4"
+            ]
+        }
+    },
+    "9 - HealthMetrics": {
+        "name": "HealthMetrics",
+        "measures": [
+            "Blood_Pressure",
+            "Heart_Rate",
+            "BMI",
+            "Blood_Sugar"
+        ],
+        "dimensions": [
+            "Age_Group",
+            "Gender",
+            "Health_Status"
+        ],
+        "sample": {
+            "Age_Group": [
+                "Under_30",
+                "30-50",
+                "50-70",
+                "Over_70"
+            ],
+            "Gender": [
+                "Male",
+                "Female"
+            ],
+            "Health_Status": [
+                "Healthy",
+                "Prehypertension",
+                "Hypertension"
+            ]
+        }
+    },
+    "10 - EnergyConsumption": {
+        "name": "EnergyConsumption",
+        "measures": [
+            "Electricity_Consumption",
+            "Gas_Consumption",
+            "Water_Consumption"
+        ],
+        "dimensions": [
+            "Building_Type",
+            "Usage_Type",
+            "Time_Period"
+        ],
+        "sample": {
+            "Building_Type": [
+                "Residential",
+                "Commercial",
+                "Industrial"
+            ],
+            "Usage_Type": [
+                "Heating",
+                "Cooling",
+                "Lighting"
+            ],
+            "Time_Period": [
+                "Day",
+                "Week",
+                "Month",
+                "Year"
+            ]
+        }
+    },
+
+    "11 - MarketingData": {
+    "name": "MarketingData",
+    "measures": [
+        "Ad_Spend",
+        "Clicks",
+        "Conversions"
+    ],
+    "dimensions": [
+        "Campaign_Type",
+        "Region",
+        "Platform",
+        "Audience_Segment"
+    ],
+    "sample": {
+        "Campaign_Type": [
+            "Search",
+            "Display",
+            "Social",
+            "Email"
+        ],
+        "Region": [
+            "North",
+            "South",
+            "East",
+            "West"
+        ],
+        "Platform": [
+            "Google",
+            "Facebook",
+            "LinkedIn",
+            "Twitter"
+        ],
+        "Audience_Segment": [
+            "Young_Adults",
+            "Professionals",
+            "Retirees",
+            "Students"
+        ]
+    }
+},
+
+    "12 - InventoryData": {
+    "name": "InventoryData",
+    "measures": [
+        "Items_In_Stock",
+        "Consumption_Per_Day",
+        "Average_Item_Age"
+    ],
+    "dimensions": [
+        "Product_Category",
+        "Warehouse_Location",
+        "Supplier"
+    ],
+    "sample": {
+        "Product_Category": [
+            "Appliances",
+            "Furniture",
+            "Electrical",
+            "Computers"
+        ],
+        "Warehouse_Location": [
+            "Georgia",
+            "Main",
+            "Minnesota",
+            "Michigan"
+        ],
+        "Supplier": [
+            "Supplier_A",
+            "Supplier_B",
+            "Supplier_C"
+        ]
+    }
+},
+
+    "13 - ProductionData": {
+    "name": "ProductionData",
+    "measures": [
+        "Units_Produced",
+        "Defect_Rate",
+        "Downtime"
+    ],
+    "dimensions": [
+        "Product_Line",
+        "Factory_Location",
+        "Shift"
+    ],
+    "sample": {
+        "Product_Line": [
+            "Electronics",
+            "Computers",
+            "Mobile"
+        ],
+        "Factory_Location": [
+            "Factory_1",
+            "Factory_2",
+            "Factory_3",
+            "Factory_4"
+        ],
+        "Shift": [
+            "Morning",
+            "Afternoon",
+            "Night"
+        ]
+    }
+},
+
+    "14 - SaaSUsageData": {
+    "name": "SaaSUsageData",
+    "measures": [
+        "Active_Users",
+        "Subscription_Revenue",
+        "Churn_Rate"
+    ],
+    "dimensions": [
+        "User_Type",
+        "Plan_Type",
+        "Region"
+    ],
+    "sample": {
+        "User_Type": [
+            "Individual",
+            "Small_Business",
+            "Enterprise"
+        ],
+        "Plan_Type": [
+            "Free",
+            "Basic",
+            "Premium"
+        ],
+        "Region": [
+            "North_America",
+            "Europe",
+            "Asia",
+            "South_America"
+        ]
+    }
+},
+
+    "15 - AppPerformanceData": {
+    "name": "AppPerformanceData",
+    "measures": [
+        "Active_Users",
+        "Active Sessions",
+        "Session_Length",
+        "Crash_Rate"
+    ],
+    "dimensions": [
+        "App_Version",
+        "Device_Type",
+        "Operating_System"
+    ],
+    "sample": {
+        "App_Version": [
+            "1.0",
+            "1.1",
+            "2.0",
+            "2.1"
+        ],
+        "Device_Type": [
+            "Smartphone",
+            "Tablet",
+            "Desktop"
+        ],
+        "Operating_System": [
+            "iOS",
+            "Android",
+            "Windows",
+            "MacOS"
+        ]
+    }
+},
+
+    "16 - CalPayments": {
+    "name": "CalPayments",
+    "measures": [
+        "Transaction_Amount",
+        "Transaction_Count",
+        "Transaction_Fee",
+        "Transaction_Reward"
+
+    ],
+    "dimensions": [
+        "Segment",
+        "Source",
+        "Request_type",
+        "Payment_Method",
+        "Slack_mapping"
+    ],
+    "sample": {
+        "Segment": [
+            "Fashion",
+            "Gardening",
+            "Travel",
+            "Tech"
+        ],
+        "Source": [
+            "Bank",
+            "Mastercard",
+            "Shva",
+            "Visa"
+        ],
+        "Request_type": [
+            "Frontal",
+            "Online",
+            "Cash_withdraw",
+            "Contactless"
+        ],
+        "Payment_Method": [
+            "American",
+            "Visa",
+            "MasterCard",
+            "Diners",
+            "Trustly"
+        ]
+    }
+},
+
+    "17 - SalesDataNorth": {
+    "name": "SalesData",
+    "measures": [
+        "Revenue",
+        "Units_Sold",
+        "Profit"
+    ],
+    "dimensions": [
+        "Product_Type",
+        "Region",
+        "Channel"
+    ],
+    "sample": {
+        "Product_Type": [
+            "Electronics",
+            "Apparel",
+            "Furniture",
+            "Food"
+        ],
+        "Region": [
+            "Montana",
+            "Noth Dakota",
+            "Minnesota",
+            "Washington"
+        ],
+        "Channel": [
+            "Online",
+            "Retail"
+        ]
+    }
+},
+    "18 - SalesDataSouth": {
+    "name": "SalesData",
+    "measures": [
+        "Revenue",
+        "Units_Sold",
+        "Profit"
+    ],
+    "dimensions": [
+        "Product_Type",
+        "Region",
+        "Channel"
+    ],
+    "sample": {
+        "Product_Type": [
+            "Electronics",
+            "Apparel",
+            "Furniture",
+            "Food"
+        ],
+        "Region": [
+            "Texas",
+            "Mississippi",
+            "Alabama",
+            "Georgia"
+        ],
+        "Channel": [
+            "Online",
+            "Retail"
+        ]
+    }
+},
+    "19 - OrderMovement": {
+    "name": "OrderMovement",
+    "measures": [
+        "Order_Count",
+        "Avg_Delivery_Time",
+        "Avg_Delivery_Cost"
+    ],
+    "dimensions": [
+        "Product_Category",
+        "Warehouse_Location",
+        "Supplier",
+        "Supplier_Location"
+    ],
+    "sample": {
+        "Product_Category": [
+            "Appliances",
+            "Furniture",
+            "Electrical",
+            "Computers"
+        ],
+        "Warehouse_Location": [
+            "Georgia",
+            "Main",
+            "Minnesota",
+            "Michigan"
+        ],
+        "Supplier": [
+            "Supplier_A",
+            "Supplier_B",
+            "Supplier_C"
+        ],
+        "Supplier_Location": [
+            "Georgia",
+            "Miami",
+            "Minnesota",
+            "Alabama"
+        ]
+    }
+
+},
+
+    "20 - ProjectManagement": {
+    "name": "ProjectManagement",
+    "measures": [
+        "Tasks_Completed",
+        "Hours_Spent",
+        "Budget_Utilized"
+    ],
+    "dimensions": [
+        "Project_Type",
+        "Task_Type",
+        "Budget_Source"
+    ],
+    "sample": {
+        "Project_Type": [
+            "Development",
+            "Research",
+            "Marketing",
+            "Maintenance"
+        ],
+        "Task_Type": [
+            "Research",
+            "Development",
+            "Testing",
+            "Deployment"
+        ],
+        "Budget_Source": [
+            "Commercial",
+            "Credit",
+            "Direct Funding"
+        ]
+    }
+
+}
+
+
+}

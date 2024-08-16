@@ -1,0 +1,101 @@
+num,Query,id,type,direction,dimensions,measure,ambiguity_id,ambiguity_measure,ambiguity_dimensions
+0,Monitor for a significant increase in transaction amounts from tourists making online payments.,1 - CalDemo,anomaly,up,"['Is_tourist', 'Request_type']",Transactions_request_Amount,0,0,0
+1,Alert for sharp declines in transaction counts for contactless payments in the tech segment.,1 - CalDemo,anomaly,down,"['Segment', 'Request_type']",Transaction_Request_Count,0,0,0
+2,Monitor for unexpected spikes in declined transactions through Visa in the gardening segment.,1 - CalDemo,anomaly,up,"['Segment', 'Payment_Method', 'Status']",Transaction_Request_Count,0,0,0
+3,Alert for a significant drop in transaction amounts from non-tourists using MasterCard in fashion.,1 - CalDemo,anomaly,down,"['Is_tourist', 'Segment', 'Payment_Method']",Transactions_request_Amount,0,0,0
+4,Monitor sharp increases in approved transactions from Shva in the travel segment.,1 - CalDemo,anomaly,up,"['Source', 'Segment', 'Status']",Transaction_Request_Count,0,0,0
+5,Alert if there is no transaction data for cash withdrawals by tourists using Diners.,1 - CalDemo,no data,both,"['Is_tourist', 'Request_type', 'Payment_Method']",Transaction_Request_Count,0,0,0
+6,Alert me when there is a decrease in transactions below 500 for any segment and source.,1 - CalDemo,static,down,"['Segment', 'Source']",Transaction_Request_Count,0,0,0
+7,Alert for unusual increases in transaction amounts via contactless payments from non-tourists in the fashion segment.,1 - CalDemo,anomaly,up,"['Is_tourist', 'Segment', 'Request_type']",Transactions_request_Amount,0,0,0
+8,Monitor a sudden drop in approved transaction counts through Visa in the gardening segment.,1 - CalDemo,anomaly,down,"['Segment', 'Payment_Method', 'Status']",Transaction_Request_Count,0,0,0
+9,"Alert for spikes in declined transactions through MasterCard in the travel segment, potentially indicating security issues.",1 - CalDemo,anomaly,up,"['Segment', 'Payment_Method', 'Status']",Transaction_Request_Count,0,0,0
+10,Monitor significant decrease in customer satisfaction scores for VIP customers via phone.,2 - CustomerSupport,anomaly,down,"['Customer_Segment', 'Contact_Channel']",Customer_Satisfaction_Score,0,0,0
+11,Alert for sudden increases in response rates through email communications.,2 - CustomerSupport,anomaly,up,['Contact_Channel'],Response_Rate,0,0,0
+12,Alert if response rates for VIP customers suddenly drop significantly.,2 - CustomerSupport,anomaly,down,['Customer_Segment'],Response_Rate,0,0,0
+13,Monitor for significant increases in customer satisfaction when handled by specific agents.,2 - CustomerSupport,anomaly,up,['Agent_ID'],Customer_Satisfaction_Score,0,0,0
+14,Alert if customer satisfaction scores drop when specific issues are resolved by certain agents.,2 - CustomerSupport,anomaly,down,"['Agent_ID', 'Issue_Resolved']",Customer_Satisfaction_Score,0,0,0
+15,Monitor for sharp increase in response rates when issues are resolved via social media.,2 - CustomerSupport,anomaly,up,"['Contact_Channel', 'Issue_Resolved']",Response_Rate,0,0,0
+16,Alert for unexpected spikes in customer satisfaction from regular customers using chat.,2 - CustomerSupport,anomaly,up,"['Customer_Segment', 'Contact_Channel']",Customer_Satisfaction_Score,0,0,0
+17,Monitor drop in response rates indicating potential system overload.,2 - CustomerSupport,anomaly,down,"['Customer_Segment', 'Contact_Channel', 'Issue_Resolved', 'Agent_ID']",Response_Rate,0,0,0
+18,Alert for no data on customer satisfaction scores for first-time customers handled by specific agents.,2 - CustomerSupport,no data,both,"['Customer_Segment', 'Agent_ID']",Customer_Satisfaction_Score,0,0,0
+19,Alert me when the customer satisfaction score for VIP segment and phone channel falls below 80,2 - CustomerSupport,static,down,"['Customer_Segment', 'Contact_Channel']",Customer_Satisfaction_Score,0,0,0
+20,Monitor spikes in daily sales volume of groceries during the summer.,3 - grocery,anomaly,up,"['Product_Category', 'Season']",Daily_Sales_Volume,0,0,0
+21,"Monitor a decrease in inventory turnover in Northern stores, suggesting decreased efficiency.",3 - grocery,anomaly,down,['Store_Location'],Inventory_Turnover_Rate,0,0,0
+22,Monitor a rise in inventory turnover during the autumn season across all categories.,3 - grocery,anomaly,up,"['Product_Category', 'Season']",Inventory_Turnover_Rate,0,0,0
+23,Alert for unexpected decreases in daily sales volume of clothing during spring.,3 - grocery,anomaly,down,"['Product_Category', 'Season']",Daily_Sales_Volume,0,0,0
+24,Monitor significant fluctuations in sales volume for home goods during promotional periods.,3 - grocery,anomaly,both,"['Product_Category', 'Promotion_Applied']",Daily_Sales_Volume,0,0,0
+25,"Alert for sharp increases in inventory turnover rates at stores in the West, potentially indicating effective promotions.",3 - grocery,anomaly,up,"['Store_Location', 'Promotion_Applied']",Inventory_Turnover_Rate,0,0,0
+26,"Alert for no sales data on electronics during winter, indicating potential supply issues.",3 - grocery,no data,both,"['Product_Category', 'Season']",Daily_Sales_Volume,0,0,0
+27,Alert me when the daily sales volume for electronics in the north store location falls below 500 units,3 - grocery,static,down,"['Product_Category', 'Store_Location']",Daily_Sales_Volume,0,0,0
+28,Monitor unexpected dips in daily sales volume of Clothing in Eastern stores,3 - grocery,anomaly,down,"['Product_Category', 'Store_Location']",Daily_Sales_Volume,0,0,0
+29,"Alert for significant increases in sales during non-promotional periods for clothing, suggesting unexpected consumer interest.",3 - grocery,anomaly,up,"['Product_Category', 'Promotion_Applied']",Daily_Sales_Volume,0,0,0
+30,Monitor significant increases in average handling time for billing issues.,4 - CustomerService,anomaly,up,['Service_Type'],Average_Handling_Time,0,0,0
+31,Alert for a sharp rise in first call resolution during evening shifts.,4 - CustomerService,anomaly,up,['Peak_Hours'],First_Call_Resolution,0,0,0
+32,Alert if theres a notable decrease in average handling time for customer inquiries.,4 - CustomerService,anomaly,down,['Service_Type'],Average_Handling_Time,0,0,0
+33,Monitor for significant drops in first call resolutions for technical support queries.,4 - CustomerService,anomaly,down,['Service_Type'],First_Call_Resolution,0,0,0
+34,Alert for unexpected spikes in handling times during peak hours by specific operators.,4 - CustomerService,anomaly,up,"['Peak_Hours', 'Operator_ID']",Average_Handling_Time,0,0,0
+35,Alert me when the average handling time for technical support during morning peak hours exceeds 15 minutes,4 - CustomerService,static,up,"['Service_Type', 'Peak_Hours']",Average_Handling_Time,0,0,0
+36,Alert for no data on first call resolution for billing issues handled by new operators.,4 - CustomerService,no data,both,"['Service_Type', 'Operator_ID']",First_Call_Resolution,0,0,0
+37,Monitor for drops in average handling time after implementing new CRM software.,4 - CustomerService,anomaly,down,"['Service_Type', 'Operator_ID', 'Peak_Hours', 'Customer_Type']",Average_Handling_Time,0,0,0
+38,"Alert for spikes in first call resolution for personal customer types, indicating improved service.",4 - CustomerService,anomaly,up,['Customer_Type'],First_Call_Resolution,0,0,0
+39,Monitor if technical support issues see an increase in resolution speed during morning hours.,4 - CustomerService,anomaly,up,"['Service_Type', 'Peak_Hours']",First_Call_Resolution,0,0,0
+40,Monitor spikes in revenue from online electronics sales in the East region.,5 - SalesData,anomaly,up,"['Product_Type', 'Region', 'Channel']",Revenue,0,0,0
+41,Alert for sudden drops in units sold for apparel in retail stores in the South.,5 - SalesData,anomaly,down,"['Product_Type', 'Region', 'Channel']",Units_Sold,0,0,0
+42,"Monitor profit margins for furniture sales, looking for significant anomalies in the West.",5 - SalesData,anomaly,both,"['Product_Type', 'Region']",Profit,0,0,0
+43,Alert me when the revenue for electronics in the north region through online channel falls below $10000,5 - SalesData,static,down,"['Product_Type', 'Region', 'Channel']",Revenue,0,0,0
+44,Alert for no data on profit for new electronics product lines in northern regions.,5 - SalesData,no data,both,"['Product_Type', 'Region']",Profit,0,0,0
+45,Monitor unexpected increases in units sold for apparel.,5 - SalesData,anomaly,up,['Product_Type'],Units_Sold,0,0,0
+46,Alert for significant dips in revenue during expected high-sales periods for furniture.,5 - SalesData,anomaly,down,['Product_Type'],Revenue,0,0,0
+47,Monitor unexpected rises in profit from retail food sales in eastern regions.,5 - SalesData,anomaly,up,"['Product_Type', 'Region', 'Channel']",Profit,0,0,0
+48,Alert me when the units sold for apparel in the south region through retail channel falls below 500 units,5 - SalesData,static,down,"['Product_Type', 'Region', 'Channel']",Units_Sold,0,0,0
+49,"Alert for sharp increases in units sold for furniture in the commercial channel, indicating a successful marketing campaign.",5 - SalesData,anomaly,up,"['Product_Type', 'Channel']",Units_Sold,0,0,0
+50,Monitor sales target achievement anomalies among managers in the Sales department.,6 - EmployeePerformance,anomaly,both,"['Department', 'Position']",Sales_Target_Achieved,0,0,0
+51,Alert for sudden drops in customer satisfaction scores among HR executives.,6 - EmployeePerformance,anomaly,down,"['Department', 'Position']",Customer_Satisfaction_Score,0,0,0
+52,Monitor absenteeism rates in the Finance department for trends indicating employee dissatisfaction.,6 - EmployeePerformance,anomaly,both,['Department'],Absenteeism_Rate,0,0,0
+53,Alert me when the absenteeism rate in the HR department for supervisors with 6-10 years tenure exceeds 5%,6 - EmployeePerformance,static,up,"['Department', 'Position', 'Tenure']",Absenteeism_Rate,0,0,0
+54,Alert for no data on sales target achievement for newly promoted supervisors in Sales.,6 - EmployeePerformance,no data,both,"['Department', 'Position', 'Tenure']",Sales_Target_Achieved,0,0,0
+55,Monitor for significant increases in customer satisfaction scores for associates with over 10 years of tenure.,6 - EmployeePerformance,anomaly,up,"['Tenure', 'Position']",Customer_Satisfaction_Score,0,0,0
+56,Alert for sharp decreases in absenteeism rates in HR.,6 - EmployeePerformance,anomaly,down,['Department'],Absenteeism_Rate,0,0,0
+57,Monitor sudden increases in sales target achievements during high-sales seasons by Marketing managers.,6 - EmployeePerformance,anomaly,up,"['Department', 'Position']",Sales_Target_Achieved,0,0,0
+58,Alert for unexpected spikes in absenteeism rates among new hires in Finance.,6 - EmployeePerformance,anomaly,up,"['Department', 'Tenure']",Absenteeism_Rate,0,0,0
+59,Alert me when the sales target achieved by sales managers with 0-2 years tenure falls below 70%,6 - EmployeePerformance,static,down,"['Department', 'Position', 'Tenure']",Sales_Target_Achieved,0,0,0
+60,Monitor for unexpected spikes in page views on product pages via social media referrals.,7 - WebsiteTraffic,anomaly,up,"['Page_Type', 'Traffic_Source']",Page_Views,0,0,0
+61,Alert for significant drops in unique visitors from direct traffic to the homepage.,7 - WebsiteTraffic,anomaly,down,"['Page_Type', 'Traffic_Source']",Unique_Visitors,0,0,0
+62,Monitor bounce rates for blogs sourced from organic search to identify engagement issues.,7 - WebsiteTraffic,anomaly,both,"['Page_Type', 'Traffic_Source']",Bounce_Rate,0,0,0
+63,"Alert for no data on page views from referral traffic to the contact page, indicating potential tracking issues.",7 - WebsiteTraffic,no data,both,"['Page_Type', 'Traffic_Source']",Page_Views,0,0,0
+64,Alert me when the unique visitors for product pages through social media on mobile devices falls below 500 visitors,7 - WebsiteTraffic,static,down,"['Page_Type', 'Traffic_Source', 'Device_Type']",Unique_Visitors,0,0,0
+65,Alert for spikes in bounce rates during promotional campaigns on product pages.,7 - WebsiteTraffic,anomaly,up,"['Page_Type', 'Traffic_Source']",Bounce_Rate,0,0,0
+66,Monitor for drops in unique visitors to blog pages during seasonal events.,7 - WebsiteTraffic,anomaly,down,['Page_Type'],Unique_Visitors,0,0,0
+67,Alert for sudden increases in page views on product pages from tablet devices.,7 - WebsiteTraffic,anomaly,up,"['Page_Type', 'Device_Type']",Page_Views,0,0,0
+68,Monitor for unexpected decreases in traffic from social media to blog pages.,7 - WebsiteTraffic,anomaly,down,"['Page_Type', 'Traffic_Source']",Unique_Visitors,0,0,0
+69,"Alert for a sharp rise in page views during non-peak hours, suggesting effective off-peak promotions.",7 - WebsiteTraffic,anomaly,up,['Peak_Hours'],Page_Views,0,0,0
+70,Monitor inventory levels for electronics from Amazon to prevent overstocking.,8 - SupplyChain,anomaly,up,"['Product_Category', 'Supplier']",Inventory_Level,0,0,0
+71,"Alert for critical lows in inventory levels of apparel at Warehouse2, indicating potential supply issues.",8 - SupplyChain,anomaly,down,"['Product_Category', 'Warehouse']",Inventory_Level,0,0,0
+72,Monitor order fulfillment times for furniture from Walmart to ensure supplier performance.,8 - SupplyChain,anomaly,both,"['Product_Category', 'Supplier']",Order_Fulfillment_Time,0,0,0
+73,"Alert for no data on supplier performance for toys from Target, indicating potential reporting issues.",8 - SupplyChain,no data,both,"['Product_Category', 'Supplier']",Supplier_Performance,0,0,0
+74,Alert me when the inventory level for electronics from Amazon in Warehouse1 falls below 1000 units,8 - SupplyChain,static,down,"['Product_Category', 'Supplier', 'Warehouse']",Inventory_Level,0,0,0
+75,Alert for sudden increases in order fulfillment times for electronics from BestBuy.,8 - SupplyChain,anomaly,up,"['Product_Category', 'Supplier']",Order_Fulfillment_Time,0,0,0
+76,"Monitor drops in supplier performance ratings for apparel, indicating issues with Walmart.",8 - SupplyChain,anomaly,down,"['Product_Category', 'Supplier']",Supplier_Performance,0,0,0
+77,Alert for unexpected highs in inventory levels of toys during the holiday season.,8 - SupplyChain,anomaly,up,['Product_Category'],Inventory_Level,0,0,0
+78,Monitor for sharp drops in order fulfillment times for furniture items in all warehouses.,8 - SupplyChain,anomaly,down,"['Product_Category', 'Warehouse']",Order_Fulfillment_Time,0,0,0
+79,"Alert for spikes in inventory levels of furniture post-holiday season, suggesting unsold stock.",8 - SupplyChain,anomaly,up,['Product_Category'],Inventory_Level,0,0,0
+80,Monitor unexpected rises in blood pressure in the 30-50 age group.,9 - HealthMetrics,anomaly,up,['Age_Group'],Blood_Pressure,0,0,0
+81,"Alert for significant drops in heart rate among individuals over 70, indicating potential health risks.",9 - HealthMetrics,anomaly,down,['Age_Group'],Heart_Rate,0,0,0
+82,Monitor for changes in BMI that could indicate health issues in the male population.,9 - HealthMetrics,anomaly,both,['Gender'],BMI,0,0,0
+83,Alert me when the heart rate for age group 30-50 females falls below 60 bpm,9 - HealthMetrics,static,down,"['Age_Group', 'Gender']",Heart_Rate,0,0,0
+84,"Alert for no data on heart rate for females in the under-30 group, indicating missing health screenings.",9 - HealthMetrics,no data,both,"['Age_Group', 'Gender']",Heart_Rate,0,0,0
+85,"Monitor sudden increases in BMI among the elderly, suggesting potential health concerns.",9 - HealthMetrics,anomaly,up,['Age_Group'],BMI,0,0,0
+86,"Alert for drops in blood pressure among hypertensive patients, indicating effective medication.",9 - HealthMetrics,anomaly,down,['Health_Status'],Blood_Pressure,0,0,0
+87,Monitor sharp rises in blood sugar levels in the 50-70 age group during winter.,9 - HealthMetrics,anomaly,up,['Age_Group'],Blood_Sugar,0,0,0
+88,Alert for increases in heart rate that could signify stress or potential health issues in females.,9 - HealthMetrics,anomaly,up,['Gender'],Heart_Rate,0,0,0
+89,Alert me when the blood pressure for age group under 30 males exceeds 140/90,9 - HealthMetrics,static,up,"['Age_Group', 'Gender']",Blood_Pressure,0,0,0
+90,Monitor for spikes in electricity consumption in commercial buildings.,10 - EnergyConsumption,anomaly,up,['Building_Type'],Electricity_Consumption,0,0,0
+91,"Alert for unexpected drops in gas consumption in industrial buildings, suggesting operational issues.",10 - EnergyConsumption,anomaly,down,['Building_Type'],Gas_Consumption,0,0,0
+92,Monitor water consumption in residential buildings to manage resource use effectively.,10 - EnergyConsumption,anomaly,both,['Building_Type'],Water_Consumption,0,0,0
+93,"Alert for no data on gas consumption in commercial buildings, indicating metering issues.",10 - EnergyConsumption,no data,both,['Building_Type'],Gas_Consumption,0,0,0
+94,Alert me when the electricity consumption for residential buildings used for heating exceeds 1000 kWh or falls below 800kWh per day,10 - EnergyConsumption,static,both,"['Building_Type', 'Usage_Type', 'Time_Period']",Electricity_Consumption,0,0,0
+95,"Alert for significant increases in water consumption in commercial buildings during non-peak times, possibly indicating leaks.",10 - EnergyConsumption,anomaly,up,"['Building_Type', 'Time_Period']",Water_Consumption,0,0,0
+96,"Monitor decreases in electricity consumption in industrial buildings, potentially indicating less production activity.",10 - EnergyConsumption,anomaly,down,['Building_Type'],Electricity_Consumption,0,0,0
+97,Alert for unexpected increases in gas consumption during non-heating periods in residential buildings.,10 - EnergyConsumption,anomaly,up,"['Building_Type', 'Usage_Type']",Gas_Consumption,0,0,0
+98,"Monitor for sudden rises in water consumption in industrial settings, which could suggest inefficiencies or leaks.",10 - EnergyConsumption,anomaly,up,['Building_Type'],Water_Consumption,0,0,0
+99,"Alert for spikes in electricity usage in commercial settings during weekends, potentially due to unauthorized use.",10 - EnergyConsumption,anomaly,up,"['Building_Type', 'Time_Period']",Electricity_Consumption,0,0,0

@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+openai = "*"
+requests = "*"
+instructor = "*"
+pandas = "*"
+openpyxl = "*"
+tqdm = "*"
+anthropic = "*"
+nltk = "*"
+streamlit = "*"
+langchain = "*"
+langchain-community = "*"
+langchain-openai = "*"
+langsmith = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
